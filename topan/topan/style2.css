@@ -1,0 +1,136 @@
+:root {
+  --primary: rgba(0, 8, 255, 0.89);
+  --bg: rgba(0, 13, 255, 0.89);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-slizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: rgb(125, 158, 190);
+  color: #fff;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(88, 109, 130);
+  border-bottom: 1px solid #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  font-style: italic;
+}
+.navbar .navbar-logo span {
+  color: #fff;
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #000000;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #000000;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.6);
+}
+
+#hamburger-menu {
+  display: none;
+}
+#bg-login {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box-login {
+  width: 300px;
+  min-height: 200px;
+  border: 1px solid #ccc;
+  background-color: rgb(88, 109, 130);
+  padding: 15px;
+  box-sizing: border-box;
+}
+.box-login h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.input-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.btn {
+  padding: 8px 15px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.section {
+  padding: 25px 0;
+}
+.box-tambah {
+  margin-bottom: 10px;
+  margin: 2px;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: rgb(88, 109, 130);
+  color: rgb(88, 109, 130) 9;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+}
+.box {
+  background-color: rgb(88, 109, 130);
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-sizing: border-box;
+  margin: 10px 0 25px 0;
+}
